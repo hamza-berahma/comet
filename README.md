@@ -13,7 +13,7 @@ pip install comet-flowtools
 Or install from source for development:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/hamza-berahma/comet
 cd comet
 pip install -e .
 ```
