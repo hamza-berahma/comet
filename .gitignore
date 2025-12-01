@@ -145,6 +145,11 @@ cython_debug/
 
 # ANTLR generated files (if regenerating)
 .antlr/
+*.interp
+*.tokens
+
+# Example/test rapcode files (not part of package)
+*.rapcode
 
 # Temporary files
 *.tmp
