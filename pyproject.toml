@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comet-flowtools"
+version = "0.1.0"
+description = "Raptor flowchart converter and Rapcode interpreter utilities."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "CC-BY-4.0"
+license-files = ["LICENSE"]
+authors = [
+    {name = "Hamza Berahma", email = "hamzaberahmaofficial@gmail.com"}
+]
+keywords = [
+    "raptor",
+    "flowchart",
+    "rapcode",
+    "interpreter",
+    "converter",
+    "ast",
+    "mermaid",
+    "graphviz",
+    "educational",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Education",
+    "Topic :: Software Development :: Interpreters",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Markup :: XML",
+]
+dependencies = [
+    "antlr4-python3-runtime>=4.13",
+]
+
+[project.urls]
+Homepage = "https://github.com/hamzaberahma/comet"
+Repository = "https://github.com/hamzaberahma/comet"
+Issues = "https://github.com/hamzaberahma/comet/issues"
+
+[project.optional-dependencies]
+dev = [
+    "build>=1.0.0",
+    "twine>=4.0.0",
+]
+
+[project.scripts]
+raptor-convert = "raptor_converter.cli:main"
+rapcode-run = "rapcode_interpreter.main:main"
+flowtools = "comet_flowtools.tools.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

@@ -1,0 +1,28 @@
+<MainWindowViewModel.Raptor_File
+    xmlns="http://schemas.datacontract.org/2004/07/RAPTOR_Avalonia_MVVM.ViewModels"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:a="http://schemas.datacontract.org/2004/07/raptor"
+    xmlns:b="http://www.w3.org/2001/XMLSchema">
+  <subcharts xmlns:a="http://schemas.datacontract.org/2004/07/raptor">
+    <a:Subchart>
+      <a:Start>
+        <a:_Successor i:type="a:Parallelogram">
+          <a:_text_str>radius</a:_text_str>
+          <a:_prompt>"What is the radius of your circle?"</a:_prompt>
+          <a:_is_input>true</a:_is_input>
+          <a:_Successor i:type="a:Rectangle">
+            <a:_text_str>area := 3.14 * radius * radius</a:_text_str>
+            <a:_Successor i:type="a:Parallelogram">
+              <a:_text_str>"The area is " + area</a:_text_str>
+              <a:_is_input>false</a:_is_input>
+              <a:_Successor i:type="a:Oval">
+                <a:_Successor i:nil="true"/>
+              </a:_Successor>
+            </a:_Successor>
+          </a:_Successor>
+        </a:_Successor>
+      </a:Start>
+    </a:Subchart>
+  </subcharts>
+</MainWindowViewModel.Raptor_File>
+
